@@ -1,8 +1,9 @@
 const loadDepts = require('./departments');
+const printToDom = require('./dom');
 
 const whenDeptLoads = function () {
-  const data = JSON.parse(this.responseText);
-  console.log('departments', data);
+  const data = JSON.parse(this.responseText).departments;
+  printToDom(data);
 };
 
 const badDepts = function () {
