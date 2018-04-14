@@ -20,7 +20,6 @@ const showItems = (e) => {
   // ToDo: filter items by deptId
 };
 
-
 const addDepEvents = () => {
   for (let i = 0; i < deptCards.length; i++) {
     deptCards[i].addEventListener('mouseenter', showDeptName);
