@@ -11,7 +11,7 @@ const whenDeptLoads = function () {
 
 const whenItemsLoads = function () {
   const itemsData = JSON.parse(this.responseText).items;
-  console.log('items data', itemsData);
+  data.setItems(itemsData);
 };
 
 const badDepts = function () {
