@@ -31,5 +31,9 @@ body {
 }
 
 .item {
-  height: 200px;
+  height: 300px;
+}
+
+.item .panel{
+  height: 275px;
 }
