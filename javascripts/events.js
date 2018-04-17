@@ -20,9 +20,7 @@ const hideDeptName = (e) => {
 
 const showItems = (e) => {
   const departmentId = e.target.parentNode.children[0].dataset.deptId;
-  console.log('data-id', departmentId);
   const selectedItems = data.getItemsByDept(departmentId);
-  console.log('selected items', selectedItems);
   departmentDivContainerDiv.innerHTML = '';
   itemsDom(selectedItems);
   // ToDo: filter items by deptId
