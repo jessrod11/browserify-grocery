@@ -1,5 +1,8 @@
 const dataGatekeeper = require('./dataGatekeeper');
+const buttonEvents = require ('./buttonEvents');
 
+buttonEvents.departmentsButton();
+buttonEvents.cartButton();
 dataGatekeeper.initializer();
 
 $('body').on('click', '.btn-number', function (e) {
